@@ -156,14 +156,4 @@ Verifique se a pasta `data/` foi copiada junto do `.exe`.
 * *Logs* de combate detalhados.
 * *Achievements* e *endings* alternativos.
 
----
-
-## 👥 Equipe
-
-* Elberth Mayan
-* Daiane Botelho
-* Lais
-* Isaque Felix
-* Yasmin
-
 
