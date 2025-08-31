@@ -1,0 +1,216 @@
+{
+  "foods": [
+    {
+      "name": "banana",
+      "weight": 0.3
+    },
+    {
+      "name": "maca",
+      "weight": 0.2
+    },
+    {
+      "name": "milho",
+      "weight": 0.15
+    },
+    {
+      "name": "cogumelo_comestivel",
+      "weight": 0.1
+    },
+    {
+      "name": "carne_crua",
+      "weight": 1.0
+    },
+    {
+      "name": "carne_de_cobra",
+      "weight": 0.8
+    },
+    {
+      "name": "pao",
+      "weight": 0.5
+    },
+    {
+      "name": "cafe",
+      "weight": 0.1
+    },
+    {
+      "name": "arroz",
+      "weight": 0.5
+    },
+    {
+      "name": "bolo",
+      "weight": 1.5
+    },
+    {
+      "name": "peixe_empanado",
+      "weight": 0.7
+    },
+    {
+      "name": "petisco_de_cobra",
+      "weight": 0.9
+    },
+    {
+      "name": "macarrao",
+      "weight": 0.5
+    },
+    {
+      "name": "suco_de_maca",
+      "weight": 0.4
+    },
+    {
+      "name": "cha_de_cogumelo",
+      "weight": 0.2
+    },
+    {
+      "name": "macarrao_com_carne",
+      "weight": 1.2
+    },
+    {
+      "name": "macarrao_com_carne_enlatada",
+      "weight": 1.5
+    },
+    {
+      "name": "pao_com_caviar",
+      "weight": 0.8
+    },
+    {
+      "name": "agua_engarrafada",
+      "weight": 1.0
+    }
+  ],
+  "materials": [
+    {
+      "name": "madeira",
+      "weight": 2.0
+    },
+    {
+      "name": "pedra",
+      "weight": 1.5
+    },
+    {
+      "name": "galho",
+      "weight": 0.5
+    },
+    {
+      "name": "corda",
+      "weight": 0.5
+    },
+    {
+      "name": "linha",
+      "weight": 0.1
+    },
+    {
+      "name": "tecido",
+      "weight": 0.5
+    },
+    {
+      "name": "ferro",
+      "weight": 3.0
+    },
+    {
+      "name": "pano",
+      "weight": 0.3
+    },
+    {
+      "name": "pena",
+      "weight": 0.05
+    },
+    {
+      "name": "ovo",
+      "weight": 0.1
+    },
+    {
+      "name": "caviar",
+      "weight": 0.2
+    }
+  ],
+  "tools": [
+    {
+      "name": "faca",
+      "weight": 0.5
+    },
+    {
+      "name": "panela",
+      "weight": 1.0
+    },
+    {
+      "name": "isqueiro",
+      "weight": 0.1
+    },
+    {
+      "name": "vara_de_pesca",
+      "weight": 1.5
+    },
+    {
+      "name": "fogao_artesanal",
+      "weight": 5.0
+    },
+    {
+      "name": "isqueiro_artesanal",
+      "weight": 0.2
+    }
+  ],
+  "medicine": [
+    {
+      "name": "antibiotico",
+      "weight": 0.1
+    },
+    {
+      "name": "antidoto",
+      "weight": 0.1
+    },
+    {
+      "name": "remedio_de_ervas",
+      "weight": 0.2
+    }
+  ],
+  "equipments": [
+    {
+      "name": "armadura_nivel_3",
+      "weight": 15.0
+    },
+    {
+      "name": "melhoria_roupa_nivel_1",
+      "weight": 1.0
+    },
+    {
+      "name": "melhoria_roupa_nivel_2",
+      "weight": 2.0
+    },
+    {
+      "name": "armadura_de_couro",
+      "weight": 5.0
+    },
+    {
+      "name": "armadura_de_ferro",
+      "weight": 10.0
+    }
+  ],
+  "rare_materials": [
+    {
+      "name": "mica",
+      "weight": 0.2
+    },
+    {
+      "name": "quartzo",
+      "weight": 0.5
+    },
+    {
+      "name": "prata",
+      "weight": 1.5
+    }
+  ],
+  "gems": [
+    {
+      "name": "ametista",
+      "weight": 0.1
+    },
+    {
+      "name": "turmalina",
+      "weight": 0.1
+    },
+    {
+      "name": "diamante",
+      "weight": 0.05
+    }
+  ]
+}

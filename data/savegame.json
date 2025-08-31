@@ -1,0 +1,21 @@
+{
+    "name": "Elberth",
+    "health": 100,
+    "hunger": 30,
+    "thirst": 20,
+    "age": 18,
+    "inventory": {
+        "carne_enlatada": 1,
+        "antibiotico": 1,
+        "panela": 1
+    },
+    "location": "Cidade",
+    "pet": null,
+    "clima": "Ensolarado",
+    "doenca": false,
+    "veneno": false,
+    "equipped_armor": null,
+    "has_fire": false,
+    "current_date": "1994-12-06 18:00:00",
+    "story_progress": 0
+}

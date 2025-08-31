@@ -1,0 +1,16 @@
+{
+  "machado": {"madeira": 1, "pedra": 1},
+  "vara de pesca": {"galho": 1, "linha": 1},
+  "barraca": {"madeira": 2, "roupas": 1},
+  "fogueira": {"madeira": 2, "pedra": 2},
+  "fogao_artesanal": {"ferro": 1, "pedra": 1},
+  "isqueiro_artesanal": {"ferro": 1, "gasolina": 1},
+  "melhoria_roupa_nivel_1": {"pano": 1, "linha": 1},
+  "melhoria_roupa_nivel_2": {"melhoria_roupa_nivel_1": 1, "tecido": 1},
+  "armadura_nivel_3": {"melhoria_roupa_nivel_2": 1, "ferro": 1},
+  "arco": {"galho": 1, "corda": 1, "faca": 1},
+  "flechas": {"galho": 1, "pedra_afiada": 1, "pena": 1},
+  "remedio_de_ervas": {"ervas": 2, "agua_engarrafada": 1},
+  "abrigo_basico": {"madeira": 5, "galho": 3, "pano": 2},
+  "abrigo_melhorado": {"madeira": 10, "pedra": 5, "tecido": 3}
+}

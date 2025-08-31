@@ -1,0 +1,13 @@
+{
+  "cha_de_cogumelo": {"cogumelo_comestivel": 1, "agua_engarrafada": 1},
+  "suco_de_maca": {"maca": 1, "agua_engarrafada": 1},
+  "macarrao_com_carne_enlatada": {"macarrao": 1, "carne_enlatada": 1},
+  "macarrao_com_carne": {"macarrao": 1, "carne_crua": 1},
+  "petisco_de_cobra": {"carne_de_cobra": 1},
+  "peixe_ensopado": {"peixe": 1, "agua_engarrafada": 1},
+  "peixe_empanado": {"peixe": 1, "pao": 1},
+  "arroz_cozido": {"arroz": 1, "agua_engarrafada": 1},
+  "bolo": {"ovo": 2, "leite": 1, "farinha": 1, "acucar": 1},
+  "pao_com_caviar": {"pao": 1, "caviar": 1},
+  "cafe_preparado": {"cafe": 1, "agua_engarrafada": 1}
+}

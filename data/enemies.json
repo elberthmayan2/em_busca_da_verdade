@@ -1,0 +1,55 @@
+{
+  "cobra": {
+    "strength": 5,
+    "damage": 10,
+    "loot": {
+      "carne_de_cobra": 1
+    }
+  },
+  "lobo": {
+    "strength": 15,
+    "damage": 20,
+    "loot": {
+      "carne_de_lobo": 1,
+      "pele_de_lobo": 1
+    }
+  },
+  "urso": {
+    "strength": 30,
+    "damage": 40,
+    "loot": {
+      "carne_de_urso": 2,
+      "pele_de_urso": 1
+    }
+  },
+  "rato": {
+    "strength": 2,
+    "damage": 5,
+    "loot": {
+      "carne_de_rato": 1
+    }
+  },
+  "cão_selvagem": {
+    "strength": 12,
+    "damage": 15,
+    "loot": {
+      "carne_de_cachorro": 1
+    }
+  },
+  "urso_da_montanha": {
+    "strength": 35,
+    "damage": 45,
+    "loot": {
+      "carne_de_urso": 2,
+      "pele_de_urso": 1
+    }
+  },
+  "leao_da_montanha": {
+    "strength": 25,
+    "damage": 30,
+    "loot": {
+      "carne_de_leao": 1,
+      "pele_de_leao": 1
+    }
+  }
+}
