@@ -1,159 +1,122 @@
-# Em Busca da Verdade
+Projeto Conexo
+Rede social front-end. Uma plataforma para conectar pessoas, compartilhar ideias e criar comunidades, com foco em interatividade e em um ambiente acolhedor.
 
-> **RPG de sobrevivência em Python**. Você acorda em um mundo devastado e precisa lidar com **fome**, **sede**, **inimigos** e **mudanças climáticas**. A jornada começa em **06/12/1994**, aos **18 anos**. **Sobreviva até os 30** para recuperar suas memórias — e descobrir a verdade.
+✨ Funcionalidades Principais
+Feed Interativo & Notificações: compartilhe momentos e fique por dentro das novidades.
 
----
+Chat em Tempo Real: converse de forma privada e segura com seus amigos.
 
-## 🎮 Destaques do Jogo
+Perfis e Busca: crie seu perfil, personalize-o e encontre outros usuários.
 
-* **Narrativa + Tela Inicial**: introdução à história e menu com escolhas iniciais.
-* **Inventário Completo**: gerencie itens, consuma recursos e use o sistema de *crafting*.
-* **Combate e Sobrevivência**: enfrente inimigos, resista ao clima e ao passar do tempo.
-* **API de Save/Load Local**: progresso salvo em `data/savegame.json` usando JSON.
+Comunidades e Workshops: participe de grupos e aprenda em eventos online.
 
----
+Salas de Chamada Temáticas: conecte-se por voz em espaços seguros e segmentados.
 
-## 🧠 Como funciona o Save/Load
+Game Center Integrado: relaxe e divirta-se com um jogo casual na plataforma.
 
-* **Gerenciamento de estado**: estatísticas do jogador, inventário e progresso da história.
-* **Persistência automática**: ao iniciar, o jogo detecta *save* existente e oferece continuar.
-* **Tecnologia**: JSON + bibliotecas padrão do Python (sem dependências complexas).
+🧠 Como Funciona
+Gerenciamento de Estado: a interação do usuário é gerenciada via JavaScript, manipulando o DOM para criar uma experiência dinâmica e responsiva.
 
----
+Navegação Estática: o projeto utiliza múltiplos arquivos HTML para simular a navegação entre diferentes seções da plataforma (feed, chat, perfil, etc.).
 
-## 🛠️ Tecnologias
+Tecnologia: construído com tecnologias web padrões, sem a necessidade de frameworks complexos ou dependências de backend.
 
-* Python 3.x
-* [colorama](https://pypi.org/project/colorama/)
+🛠️ Tecnologias
+HTML5
 
----
+CSS3
 
-## ▶️ Como executar
+JavaScript (ES6+)
 
-### Opção 1 — Executável (Windows)
+▶️ Como executar
+Rodar pelo código-fonte
+Instale o Git se ainda não tiver.
 
-1. Baixe/clique em `dist/main.exe`.
-2. Execute e siga as instruções no console.
+Clone o repositório para sua máquina local:
 
-> Observação: o *save* será criado/atualizado em `data/savegame.json`.
+git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
 
-### Opção 2 — Rodar pelo código-fonte
+Navegue até a pasta do projeto:
 
-1. Instale o Python 3.x.
-2. (Opcional) Crie e ative um *virtualenv*.
-3. Instale dependências:
+cd conexo-main
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Rode o jogo:
+Abra o arquivo index.html no seu navegador.
 
-   ```bash
-   python main.py
-   ```
+Dica: para uma melhor experiência, use a extensão Live Server no VS Code. Ela recarrega a página automaticamente a cada alteração, agilizando o desenvolvimento.
 
----
+🗂️ Estrutura do Projeto
+conexo-main/
+├── css/
+│   └── style.css
+├── js/
+│   ├── chat.js
+│   ├── game.js
+│   ├── main.js
+│   └── ... (outros scripts)
+├── images/
+│   └── ... (imagens do projeto)
+├── music/
+│   └── ... (arquivos de áudio)
+├── index.html
+├── feed.html
+├── chat.html
+├── profile.html
+├── game.html
+└── ... (outras páginas HTML)
 
-## 📦 Gerar o executável (PyInstaller)
+Arquivos principais
 
-> Gere um `.exe` autônomo incluindo a pasta `data/` (Windows).
+index.html: ponto de entrada da aplicação (página de login/cadastro).
 
-```bash
-pip install -r requirements.txt
-pip install pyinstaller
+feed.html: página principal após o login, onde o conteúdo é exibido.
 
-# Na raiz do projeto
-pyinstaller \
-  --onefile \
-  --name main \
-  --add-data "data;data" \
-  main.py
-```
+chat.html: interface de mensagens diretas.
 
-* O executável final ficará em `dist/main.exe`.
-* Se usar Linux/macOS, troque `--add-data "data;data"` por `--add-data "data:data"`.
+css/style.css: folha de estilo principal que define a aparência do projeto.
 
----
+js/main.js / script.js: scripts principais que controlam a lógica geral e interatividade.
 
-## 🗂️ Estrutura do Projeto
+js/chat.js / game.js: scripts com a lógica específica de suas respectivas seções.
 
-```
-em-busca-da-verdade/
-├── data/
-│   ├── consumables.json
-│   ├── enemies.json
-│   ├── items.json
-│   ├── recipes_cooking.json
-│   ├── recipes_craft.json
-│   └── savegame.json
-├── dist/
-│   └── main.exe
-├── main.py
-├── player.py
-├── menus.py
-├── narrativa.py
-├── savegame.py
-├── utils.py
-├── path_handler.py
-└── requirements.txt
-```
+🕹️ Navegação & Uso
+Menu Inicial → acesse pelo index.html para simular o login ou cadastro.
 
-**Arquivos principais**
+Ações → navegue pelas seções usando os links do menu: Feed, Chat, Comunidades, Jogo, etc.
 
-* `main.py`: ponto de entrada do jogo.
-* `player.py`: status do jogador (fome, sede, idade, etc.).
-* `menus.py`: navegação e escolhas do usuário.
-* `narrativa.py`: textos e eventos da história.
-* `savegame.py`: leitura/escrita do `savegame.json`.
-* `utils.py`: funções auxiliares (ex.: validação e formatação).
-* `path_handler.py`: resolve caminhos (execução via `.py` ou `.exe`).
+Interatividade → as funcionalidades de cada página (enviar mensagem, jogar, etc.) são controladas pelos seus respectivos arquivos JavaScript.
 
----
+Dica: explore as diferentes páginas HTML para visualizar todas as funcionalidades implementadas no front-end.
 
-## 🕹️ Controles & Loop de jogo
+❓ Perguntas Frequentes (FAQ)
+Preciso de um servidor para rodar o projeto?
+Não. O projeto é 100% front-end e pode ser executado diretamente abrindo os arquivos HTML no navegador.
 
-* **Menu inicial** → iniciar novo jogo / continuar / sair.
-* **Ações** → explorar, lutar, coletar, cozinhar, craftar, gerenciar inventário.
-* **Passagem do tempo** → envelhecimento, clima e eventos impactam status.
+Os chats, posts e perfis são salvos de verdade?
+Não. Como este é um protótipo focado na interface (UI/UX), os dados não são salvos em um banco de dados. Toda a informação é perdida ao recarregar a página.
 
-> Dica: administre **comida** e **água** antes de enfrentar combates longos.
+Posso adaptar este projeto para usar um backend?
+Sim! A estrutura HTML/CSS/JS é uma excelente base para ser integrada com um backend (Node.js, Python, etc.) e um banco de dados (Firebase, MongoDB, SQL) para torná-lo totalmente funcional.
 
----
+📌 Roadmap (Ideias Futuras)
+Integração com backend para persistência de dados.
 
-##  Dados de jogo (JSON)
+Sistema de autenticação de usuários real.
 
-* `items.json`: itens gerais (materiais, ferramentas, etc.).
-* `consumables.json`: consumíveis (efeitos de fome/sede/saúde).
-* `enemies.json`: atributos e comportamento básico dos inimigos.
-* `recipes_craft.json`: receitas de *crafting* (entrada → saída).
-* `recipes_cooking.json`: receitas de cozimento (cru → preparado).
+Notificações push em tempo real.
 
----
+Upload de imagens e arquivos no feed e no chat.
 
-## ❓ Perguntas frequentes (FAQ)
+Otimização para dispositivos móveis (responsividade).
 
-**Onde fica o arquivo de *save*?**
-Em `data/savegame.json` (criado automaticamente na primeira execução).
+🤝 Como Contribuir
+Contribuições são muito bem-vindas! Se quiser melhorar o projeto, siga os passos:
 
-**Posso resetar o progresso?**
-Sim. Exclua `data/savegame.json` ou use a opção “Novo Jogo”.
+Faça um Fork do projeto.
 
-**O executável fecha imediatamente. E agora?**
-Execute pelo Terminal para ver o erro:
+Crie uma Branch para sua feature (git checkout -b feature/NovaFuncionalidade).
 
-```bash
-./dist/main.exe
-```
+Commit suas mudanças (git commit -m 'Adiciona NovaFuncionalidade').
 
-Verifique se a pasta `data/` foi copiada junto do `.exe`.
+Faça o Push para a Branch (git push origin feature/NovaFuncionalidade).
 
----
-
-## 📌 Roadmap (Ideias Futuras)
-
-* Dificuldades configuráveis.
-* Eventos climáticos dinâmicos por região.
-* *Logs* de combate detalhados.
-* *Achievements* e *endings* alternativos.
-
-
+Abra um Pull Request.
